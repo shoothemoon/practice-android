@@ -2,6 +2,7 @@ package shoothemoon.github.com.app
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -11,5 +12,12 @@ class MainActivity : AppCompatActivity() {
 
 
 
+        Submit.setOnClickListener{
+
+            output.text = "Hello  ${editText.text}"
+
+            editText.getText().clear();
+
+        }
     }
 }
