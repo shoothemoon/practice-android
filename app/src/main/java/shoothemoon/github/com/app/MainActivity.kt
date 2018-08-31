@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
             output.text = "Hello  ${editText.text}"
 
-            editText.getText().clear();
+            editText.getText().clear()
 
         }
     }
